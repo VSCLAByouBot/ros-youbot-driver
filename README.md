@@ -13,32 +13,26 @@
 
 ### 1-2 建立 workspace
 
-1. 複製所需 packages
+1. 複製所需 packages (此 repository)
 
-   + 方法 1:
+   ```
+   mkdir -p catkin_ws/src
+   cd catkin_ws
+   catkin_init_workspace
+   cd src
 
-      ```
-      mkdir -p catkin_ws/src
-      cd catkin_ws
-      catkin_init_workspace
-      cd src
+   git clone https://github.com/youbot/youbot_driver.git
+   cd youbot_driver
+   git checkout hydro-devel
+   cd ..
 
-      git clone https://github.com/youbot/youbot_driver.git
-      cd youbot_driver
-      git checkout hydro-devel
-      cd ..
-
-      git clone https://github.com/youbot/youbot_driver_ros_interface.git
-      git clone https://github.com/youbot/youbot_description.git
-      cd youbot_description
-      git checkout kinetic-devel
-      cd ..
-      git clone https://github.com/youbot/youbot_navigation.git
-      ```
-
-   + 方法 2:
-   
-      複製此 repository
+   git clone https://github.com/youbot/youbot_driver_ros_interface.git
+   git clone https://github.com/youbot/youbot_description.git
+   cd youbot_description
+   git checkout kinetic-devel
+   cd ..
+   git clone https://github.com/youbot/youbot_navigation.git
+   ```
 
 2. 調整
 
